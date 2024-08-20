@@ -1,0 +1,72 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.player {
+    width: 600px;
+    margin: 50px auto;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.player__video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+.player__controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.progress {
+    flex-grow: 1;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.progress__filled {
+    height: 100%;
+    background-color: #007bff;
+    transition: width 0.2s;
+    width: 0%;
+}
+
+.player__button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px;
+    transition: transform 0.2s;
+}
+
+.player__button:hover {
+    transform: scale(1.1);
+}
+
+.player__slider {
+    width: 100px;
+    margin: 0 10px;
+}
